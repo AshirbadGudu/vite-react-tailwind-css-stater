@@ -20,3 +20,9 @@ yarn dev
 ```sh
 yarn add -D tailwindcss postcss autoprefixer
 ```
+
+### Generate `tailwind.config.js` and `postcss.config.js`
+
+```sh
+yarn tailwindcss init -p
+```
