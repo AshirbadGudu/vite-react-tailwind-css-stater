@@ -1,45 +1,19 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import FAV_ICON from "./favicon.svg";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
-}
+    <>
+      <main className="bg-gradient-to-tr from-slate-700 to-zinc-500 min-h-screen grid place-items-center">
+        <div className="grid place-items-center">
+          <img
+            src={FAV_ICON}
+            alt=""
+            className="w-40 h-40 cursor-pointer animate-pulse transition-all hover:-translate-y-2"
+          />
+          <h1 className="text-white text-4xl">Vite Tailwind CSS React App</h1>
+        </div>
+      </main>
+    </>
+  );
+};
 
-export default App
+export default App;
